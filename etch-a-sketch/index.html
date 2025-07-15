@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Etch a Sketch</header>
+    <div class="main">
+      <div class="option">
+        <p class="instruction">Hover mouse inside grid to draw</p>
+        <button class="button--clear" onclick="clearAllHighlight()">
+          Clear
+        </button>
+        <br />
+        <input type="number" value="16" class="grid--size" />
+        <button class="button--grid--size">Change Grid Size</button>
+      </div>
+      <div class="grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

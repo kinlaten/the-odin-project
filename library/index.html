@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Library Management System</header>
+    <div class="hero">
+      <div class="hero__header">Your collection is empty!</div>
+      <div>
+        <dialog id="dialog">
+          <header>Add a Book</header>
+          <div class="form--wrapper">
+            <form onsubmit="addBook()">
+              <div class="field--group">
+                <label for="book__name">Book Name</label>
+                <input type="text" name="" id="book__name" required />
+              </div>
+              <div class="field--group">
+                <label for="book__author">Author</label>
+                <input type="text" name="" id="book__author" required />
+              </div>
+              <div class="field--group">
+                <label for="page__count">Page count</label>
+                <input type="number" name="" id="page__count" />
+              </div>
+              <div class="field--group">
+                <label for="read__status">Read status</label
+                ><input type="checkbox" id="read__status" value="true" />
+              </div>
+              <div class="form--button">
+                <button class="add" type="submit">Add</button>
+                <button class="close">Close</button>
+              </div>
+            </form>
+          </div>
+        </dialog>
+
+        <button class="show">Add book</button>
+      </div>
+    </div>
+    <div class="book--table">
+      <div class="row field">
+        <div class="field__name">Name</div>
+        <div class="field__author">Author</div>
+        <div class="field__page">Number of pages</div>
+        <div class="field__read">Read</div>
+      </div>
+    </div>
+    <div>
+      <dialog id="delete--book">
+        <button onclick="removeBook()">Remove this book</button>
+      </dialog>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

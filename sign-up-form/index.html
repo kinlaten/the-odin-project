@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="border--cover"></div> -->
+    <header class="banner">
+      <img
+        src="assets/banner-bg.svg"
+        alt="banner background"
+        class="banner--bg"
+      />
+      <a href="https://www.traveloka.com/en-au">
+        <img
+          src="assets/banner-text.svg"
+          alt="banner text"
+          class="banner--text"
+        />
+      </a>
+    </header>
+
+    <div class="main--content">
+      <div class="hero">From Southest Asia to the World, All Yours.</div>
+      <!-- form -->
+      <div class="form">
+        <header class="form--header">Get your cheapest trip</header>
+        <form
+          action="https://www.traveloka.com/activities"
+          method="get"
+          class="form--body"
+        >
+          <div class="form--group">
+            <label for="email" class="required__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </div>
+          <div class="form--group">
+            <label for="fname" class="required__label">First name</label>
+            <input type="text" name="fname" id="fname" required />
+          </div>
+          <div class="form--group">
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" />
+          </div>
+          <div class="form--group">
+            <label for="phone">Phone number</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="form--group passwd-gr">
+            <label for="passwd" class="required__label">Password</label>
+            <input
+              type="password"
+              name="passwd"
+              id="passwd"
+              pattern=".{5,}"
+              required
+            />
+            <div class="passwd__alert"></div>
+          </div>
+          <div class="form--group">
+            <label for="conpasswd" class="required__label"
+              >Confirm password</label
+            >
+            <input
+              type="password"
+              name="conpasswd"
+              id="conpasswd"
+              pattern=".{5,}"
+              required
+            />
+            <div class="conpasswd__alert"></div>
+          </div>
+          <div class="form--group conpasswd--gr">
+            <button type="submit" class="button__register">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>Copyright © 2025 Traveloka</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

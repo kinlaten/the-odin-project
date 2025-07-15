@@ -1,0 +1,67 @@
+header{
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+}
+
+
+
+.instruction{
+    font-size: 3rem;
+}
+
+button{
+    font-size: 3rem;
+    margin: 5rem;
+}
+
+.grid{
+    width: 30vw;
+    height: auto;
+    aspect-ratio: 1/1;
+    border: 1px solid;
+    display: flex;
+}
+
+.grid--row{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.grid--cell{
+    flex: 1;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.grid--size{
+    font-size: 3rem;
+    width: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
